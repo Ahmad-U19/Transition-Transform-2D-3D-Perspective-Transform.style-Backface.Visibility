@@ -1,0 +1,27 @@
+#parent{
+    width: 350px;
+    height: 250px;
+    background-color: gray;
+    text-align: center;
+    margin: 100px 0 0 150px;
+    font-size: 18px;
+    perspective: 800px;
+    perspective-origin: left - top;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+#box{
+    width: 350px;
+    height: 250px;
+    background: pink;
+    transform: rotate(0deg);
+    transition: all 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s;
+    margin: 100px;
+    
+    
+}
+
+#box:hover{
+    transform:rotateX(360deg) perspective(300px);
+}
